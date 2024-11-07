@@ -1,0 +1,113 @@
+/* General page styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3f0e5; /* Soft beige background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container styling */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0e7d8; /* Light sandy background */
+    width: 35%;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 50px;
+}
+
+/* Title styling */
+#title {
+    color: #4a4a4a; /* Dark neutral text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+
+/* Input container and button styling */
+#inputCont {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 90%;
+    padding: 20px 0;
+}
+
+#todoInput {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #c5bfb3;
+    border-radius: 6px;
+    color: #4a4a4a;
+    background-color: #fff5e1; /* Light sandy background */
+}
+
+#addBtn {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #c5bfb3; /* Olive-sand tone */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#addBtn:hover {
+    background-color: #a6977d; /* Darker olive */
+}
+
+/* Message box styling */
+#messageBox {
+    color: #4a4a4a;
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+}
+
+/* To-do list styling */
+#todos {
+    width: 90%;
+    color: #4a4a4a; /* Neutral dark text */
+    list-style-type: square;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+#todos li {
+    background-color: #f0e7d8; /* Sandy background for each item */
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Button container inside each to-do item */
+.button-group {
+    display: flex;
+    gap: 5px; /* Space between Edit and Delete buttons */
+}
+
+/* Delete and edit button styling */
+.delete {
+    cursor: pointer;
+    color: #d9534f; /* Soft red */
+    font-weight: bold;
+    padding: 5px;
+}
+
+.edit {
+    cursor: pointer;
+    color: #0275d8; /* Soft blue */
+    font-weight: bold;
+    padding: 5px;
+}
